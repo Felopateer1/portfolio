@@ -1,0 +1,262 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: var(--yellow-color);
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Start Navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+.imglogo {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#login {
+  color: white;
+  background-color: #ff3150;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 10px;
+}
+.h1al {
+  color: #33d1cc;
+}
+#home {
+  background-color: #19283f;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#logod {
+  color: #33d1cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#btn {
+  padding: 19px;
+  width: 19%;
+  background-color: #ff3150;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  transition: 0.4s ease-in;
+}
+#btn:hover {
+  background-color: #000;
+  color: #ff3150;
+  border-left: #ff3150 solid 10px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+#socialicons {
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  #btn {
+    width: auto;
+  }
+}
+#pro{
+  background-color: #eff7fa;
+}
+.card-group {
+  margin: 0 10px;
+  justify-content: space-between;
+}
+.loog {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3em;
+  color: #33d1cc;
+}
+
+.oo {
+  letter-spacing: -3px;
+}
+.popo {
+  align-items: center;
+  color: black;
+  font-size: 0.5em;
+}
+.showsite1 {
+  border-radius: 10px;
+  padding: 2px;
+  width: 100%;
+  background-color: #33d1cc;
+}
+.showsite1:hover {
+  background-color: #19283f;
+}
+#skills {
+  background-color: #19283f;
+  color: white;
+}
+
+.skills {
+  margin: 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  position: relative;
+  width: 500px;
+  height: 30px;
+  background-color: white;
+  margin: 10px;
+}
+.progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #33d1cc;
+  transition: width 0.7s linear;
+}
+.spnamade2 {
+  color: white;
+}
+.oo2 {
+  letter-spacing: -3px;
+  color: white;
+}
+@media screen and (max-width: 1023px) {
+  .progress {
+    width: auto;
+  }
+}
+.dtes a {
+  text-decoration: none;
+}
+#about{
+  background-color: #eff7fa;
+  text-align: center;
+}
+.myabout{
+  margin: 0 10px;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #33d1cc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d8884;
+}
+#contact{
+  background-color: #19283f;
+  height: 100vh;
+}
+/* @media screen and (max-width: 1023px) {
+  #contact{
+    margin-top: 100px;
+  }
+} */
+/* .parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#email{
+  background-color: #ffffff;
+  border: none;
+  font-size: 1.1em;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}#sub{
+  background-color: #ffffff;
+  border: none;
+  font-size: 1.1em;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+.email{
+  display: flex;
+  justify-content: space-between;
+}*/
+.ttyy{ 
+  margin: 0px 40px;
+}
+#floatingPassword , #phonebutt{
+  background-color: #33d1cc;
+  font-weight: 700; 
+  margin-top: 15px;
+}
+#num{
+  padding: 10px;
+}
+#message{
+  text-align: center;
+  display: none;
+}
