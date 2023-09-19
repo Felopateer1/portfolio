@@ -12,9 +12,24 @@ window.onscroll = function () {
 let phonebutt = document.getElementById("phonebutt");
 let message = document.getElementById('message');
 
-phonebutt.onclick = () => {
+
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("num");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
   message.style.display = "block";
-  setTimeout(() => {
-  message.style.display = "none"
-}, 9000);
+  message.innerHTML = "The Number Copied";
 }
+phonebutt.onclick = () => {
+  myFunction();
+}
+
+
